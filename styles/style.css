@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botão: #a80404;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+.titulo{
+    font-family: var(--fonte-principal);
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+
+.container-principal {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.container-botao {
+    background-color: var(--botão);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 6px 3px #fdfffc;
+
+}
+
+.botao-secundario {
+    background-color: transparent;
+    color: var(--branco-principal);
+    border: 1px solid;
+    order: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+.container-aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+}
+
+.container-imagem{
+    margin: 1em 0 2em 0;
+    
+}
+
+.container-caixa {
+    margin: 0 6em;
+
+    
+}
+
+.container-mockup {
+    width: 80%;
+    
+}
+
+/* Estilização da segunda section */
+
+.container-secundario{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    margin: 0em 5em;
+}
+
+.titulo-descricao {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.paragrafo-descricao {
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+
+/* Estilização da terceira section */
+
+.container-terceiro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 10em 5em;
+    gap: 4em;
+}
+
+.botao-combo {
+    background-color: var(--botão);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    padding: 1em;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 1px #fdfffc;
+
+
+}
+
+/* Estilização da quarta section */
+
+.container-quarto {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin: 10em 5em;
+    gap: 4em;
+}
+
+/* estilização da quinta section */
+
+.ultimo {
+    text-align: center;
+}
+
+
+.dispotivo-lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivo-titulo {
+    font-size: 2.5em;
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+}
+
+
+/* Estilização do footer */
+
+.rodape {
+    text-align: center;
+    padding: 4em;
+}
+
+.rodape-logo {
+    margin: 2em;
+ }
+
+.lista-item {
+    font-family: var(--fonte-principal);
+    font-size: 1.2em;
+    color: var(--branco-principal);
+    margin: 4em 0;
+}
+
+.links-rodape {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-around;
+    gap: 0.1em;
+    font-size: 0.9em;
+
+
+}
+
+.lista-link a {
+    text-decoration: none;
+    color: var(--cinza-secundario);
+    text-align: center;
+    font-size: 0.9em;
+    margin: 1em;
+    font-size: 1em;
+
+}
+
+.rodape-texto {
+    color: var(--cinza-secundario);
+    text-align: center;
+    margin: 2em 2em;
+    font-size: 0.9em;
+    
+}
+
+
+/* Pseudo Classes  */
+
+.container-botao:hover{
+    transition: all .6s ease;
+    transform: scale(1.1);
+}
+
+
+.botao-secundario:hover{
+    transition: all .6s ease;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:768px) {
+    .container-principal {
+        display: block;
+        background-image: none;
+    }
+
+    .container-imagem{
+        width: 50vw;
+    }
+
+    .container-caixa{
+        margin: 2em 3em;
+    }
+
+    .container-secundario{
+        margin: 0;
+        text-align: center;
+        display: block;
+        margin-bottom: 4em;
+    }
+
+    .container-mockup{
+        width: 40vh;
+        
+    }
+
+    .container-terceiro{
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .Telas-plataforma{
+        width: 50vh;
+        margin-bottom: 5em ;
+    }
+
+    .container-quarto{
+        margin: 1em;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+   
+    .notebook-imagem{
+        width: 50vh;
+        margin-bottom: 5em;
+    }
+
+    .rodape{
+        margin: 0;
+        padding: 0;
+    }
+    .dispositivo-titulo{
+        font-size: 2em;
+    }
+
+    .dispotivo-lista {
+        display: block;
+
+    }
+
+    .rodape-logo {
+        margin: 0;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+
+    .lista-item{
+        margin: 0;
+
+    }
+
+    .links-rodape {
+        display: block;
+    }
+
+    .lista-link a {
+        margin: 0;
+    }
+
+    .lista-link{
+        margin: 0;
+        margin-bottom: 2em;
+    }
+
+    .rodape-texto {
+        margin: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
